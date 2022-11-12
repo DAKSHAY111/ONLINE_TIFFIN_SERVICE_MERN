@@ -60,7 +60,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(inputs);
-    const response = await fetch("http://127.0.0.1:9000/OTS/user/login", {
+    const response = await fetch("https://tiffin-box-service.herokuapp.com/OTS/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

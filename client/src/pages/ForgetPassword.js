@@ -46,7 +46,7 @@ const ForgetPassword = () => {
     console.log(inputs);
 
     const response = await fetch(
-      "http://127.0.0.1:9000/OTS/user/forgotPassword",
+      "https://tiffin-box-service.herokuapp.com/OTS/user/forgotPassword",
       {
         method: "POST",
         headers: {

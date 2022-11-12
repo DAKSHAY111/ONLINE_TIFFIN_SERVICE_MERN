@@ -45,7 +45,7 @@ const MenuItem = () => {
       order_id: data.id,
       handler: async (response) => {
         try {
-          const verifyUrl = "http://127.0.0.1:9000/OTS/order/verify";
+          const verifyUrl = "https://tiffin-box-service.herokuapp.com/OTS/order/verify";
           const { data } = await axios.post(verifyUrl, response);
           console.log(data);
         } catch (error) {
@@ -64,7 +64,7 @@ const MenuItem = () => {
     try {
       const token = "Bearer " + localStorage.getItem("jwt");
 
-      const orderUrl = "http://127.0.0.1:9000/OTS/order/placeorder";
+      const orderUrl = "https://tiffin-box-service.herokuapp.com/OTS/order/placeorder";
 
       const dataRaw = await fetch(orderUrl, {
         method: "POST",
@@ -109,7 +109,7 @@ const MenuItem = () => {
       console.log("🚀 ~ file: MenuItem.js ~ line 27 ~ getMenuItem ~ id", id);
       try {
         const res = await fetch(
-          `http://127.0.0.1:9000/OTS/menu/viewMenu/${id}`,
+          `https://tiffin-box-service.herokuapp.com/OTS/menu/viewMenu/${id}`,
           {
             method: "GET",
             headers: {

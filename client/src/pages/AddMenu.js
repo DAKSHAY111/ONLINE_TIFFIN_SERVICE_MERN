@@ -65,7 +65,7 @@ const AddMenu = () => {
 
     const token = "Bearer " + localStorage.getItem("jwt");
     console.log(inputs);
-    const response = await fetch("http://127.0.0.1:9000/OTS/menu/addMenu", {
+    const response = await fetch("https://tiffin-box-service.herokuapp.com/OTS/menu/addMenu", {
       method: "POST",
       headers: {
         authorization: token,

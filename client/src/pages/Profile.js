@@ -43,7 +43,7 @@ const Profile = () => {
     console.log(user);
     setisLoading(true);
     const token = "Bearer " + localStorage.getItem("jwt");
-    const response = await fetch("http://127.0.0.1:9000/OTS/user/updateMe", {
+    const response = await fetch("https://tiffin-box-service.herokuapp.com/OTS/user/updateMe", {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

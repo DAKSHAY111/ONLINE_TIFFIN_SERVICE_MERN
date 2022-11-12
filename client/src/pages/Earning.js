@@ -89,7 +89,7 @@ const Earning = () => {
       const token = "Bearer " + localStorage.getItem("jwt");
       try {
         const res = await fetch(
-          "http://127.0.0.1:9000/OTS/order/getAllOrders",
+          "https://tiffin-box-service.herokuapp.com/OTS/order/getAllOrders",
           {
             method: "GET",
             headers: {

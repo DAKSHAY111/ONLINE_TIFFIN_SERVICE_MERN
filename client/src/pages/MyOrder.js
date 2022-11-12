@@ -49,7 +49,7 @@ const MyOrder = () => {
     const checkAuth = async () => {
       const token = "Bearer " + localStorage.getItem("jwt");
       try {
-        const res = await fetch("http://127.0.0.1:9000/OTS/order/myorder", {
+        const res = await fetch("https://tiffin-box-service.herokuapp.com/OTS/order/myorder", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

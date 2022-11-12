@@ -30,7 +30,7 @@ const Menu = () => {
   useEffect(() => {
     const getMenu = async () => {
       try {
-        const res = await fetch("http://127.0.0.1:9000/OTS/menu/viewMenu", {
+        const res = await fetch("https://tiffin-box-service.herokuapp.com/OTS/menu/viewMenu", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
