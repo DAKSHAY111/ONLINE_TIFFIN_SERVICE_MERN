@@ -2,6 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "16.15.0",
+    "npm":"8.5.5"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
