@@ -21,11 +21,11 @@ express.urlencoded({ extended: false });
 //   next();
 // });
 
-module.exports = app.get('/OTS/', (req, res) => {
-  res.status(200).json({
-    msg: 'successful',
-  });
-});
+// module.exports = app.get('/OTS/', (req, res) => {
+//   res.status(200).json({
+//     msg: 'successful',
+//   });
+// });
 
 if(process.env.NODE_ENV === 'production'){
   app.use(express.static('client/build'));
