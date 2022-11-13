@@ -16,7 +16,7 @@ exports.placeOrder = catchAsync(async (req, res, next) => {
     key_id: process.env.RAZORPAY_KEY_ID,
     key_secret: process.env.RAZORPAY_KEY_SECRET,
   });
-
+  console.log(req.body.totalPrice + req.body.deliveryCharge);
   const options = {
     amount: parseInt(req.body.totalPrice + req.body.deliveryCharge) * 100,
     currency: 'INR',
