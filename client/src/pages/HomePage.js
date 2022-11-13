@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import SubHeading from "./SubHeading";
-import { images } from "../constants";
-import "./Home.css";
-import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+import SubHeading from './SubHeading';
+import { images } from '../constants';
+import './Home.css';
+import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const HomePage = () => {
   const history = useHistory();
@@ -14,16 +14,16 @@ const HomePage = () => {
       <div className="app__wrapper_info">
         <SubHeading title="Chase the new flavour" />
         <h1 className="app__header-h1">The Key To Fine Dining</h1>
-        <p className="p__opensans" style={{ margin: "2rem 0" }}>
+        <p className="p__opensans" style={{ margin: '2rem 0' }}>
           Welcome to our tiffin service... Just Explore different type of foods
-          and order as per your taste.{" "}
+          and order as per your taste.
         </p>
         <button
           type="button"
           className="custom__button"
           component={Link}
           to="/viewMenu"
-          onClick={() => history.push("/viewMenu")}
+          onClick={() => history.push('/viewMenu')}
         >
           Explore Menu
         </button>
